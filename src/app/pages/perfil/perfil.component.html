@@ -1,0 +1,14 @@
+<mat-toolbar>Perfil</mat-toolbar>
+<p>
+ USUARIO : {{ usuario }}
+</p>
+
+  <mat-list>
+      <h2 matLine> ROLES </h2>
+    <mat-list-item *ngFor="let rol of listaRolXUsuario">
+      <p matLine>
+        <span> - {{rol}} </span>
+      </p>
+    </mat-list-item>
+  </mat-list>
+<router-outlet></router-outlet>
